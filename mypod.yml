@@ -5,6 +5,6 @@ metadata:
 spec:
   containers:
     - name: first-container
-      image: nginx
+      image: mynginx
       ports:
        - containerPort: 80

@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+ name: jenkins-rc
+spec:
+  replicas: 4
+  selector:
+    app: myjenkins
+  template:
+    metadata:
+     labels:
+      app: myjenkins
+    spec:
+     containers:
+      - image: jenkins
+        name:  my-jenkis
+        ports:
+        - containerPort: 8080
+          protocol: TCP

@@ -3,7 +3,7 @@ kind: ReplicationController
 metadata:
   name: praneeth-rc
 spec:
-  replicas: 4
+  replicas: 3
   selector:
     app: mynginx
   template:
